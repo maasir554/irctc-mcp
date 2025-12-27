@@ -1,0 +1,112 @@
+{
+    "success": true,
+    "data": {
+        "currentPosition": {
+            "latLng": {
+                "latitude": 22.583649,
+                "longitude": 88.34213
+            },
+            "stationCode": "HWH",
+            "status": 2,
+            "distanceFromOriginKm": 199.1999969482422,
+            "distanceFromLastStationKm": 0
+        },
+        "arrivalStatus": "DELAYED",
+        "lastUpdatedTimestamp": 1766805925,
+        "route": [
+            {
+                "platformNumber": "7",
+                "stationCode": "ASN",
+                "scheduledArrivalTime": 1766793600,
+                "scheduledDepartureTime": 1766793600,
+                "stopIndex": 0,
+                "platformSources": "\n\u00017\u0018\u0015",
+                "station_name": "Asansol Junction"
+            },
+            {
+                "platformNumber": "4",
+                "stationCode": "RNG",
+                "scheduledArrivalDelaySecs": 186,
+                "scheduledDepartureDelaySecs": 555,
+                "actualArrivalTime": 1766794446,
+                "actualDepartureTime": 1766794935,
+                "scheduledArrivalTime": 1766794260,
+                "scheduledDepartureTime": 1766794380,
+                "stopIndex": 4,
+                "platformSources": "\n\u00014\u0018\u0005",
+                "station_name": "RaniGanj"
+            },
+            {
+                "platformNumber": "3",
+                "stationCode": "UDL",
+                "scheduledArrivalDelaySecs": 617,
+                "actualArrivalTime": 1766795297,
+                "scheduledArrivalTime": 1766794680,
+                "scheduledDepartureTime": 1766794800,
+                "stopIndex": 8,
+                "platformSources": "\n\u00013\u0018\u0006",
+                "station_name": "Andal Junction"
+            },
+            {
+                "platformNumber": "4",
+                "stationCode": "DGR",
+                "scheduledArrivalDelaySecs": 720,
+                "scheduledDepartureDelaySecs": 852,
+                "actualArrivalTime": 1766796180,
+                "actualDepartureTime": 1766796432,
+                "scheduledArrivalTime": 1766795460,
+                "scheduledDepartureTime": 1766795580,
+                "stopIndex": 16,
+                "platformSources": "\n\u00014\u0018\u000f",
+                "station_name": "Durgapur"
+            },
+            {
+                "platformNumber": "3",
+                "stationCode": "PAN",
+                "scheduledArrivalDelaySecs": 727,
+                "scheduledDepartureDelaySecs": 944,
+                "actualArrivalTime": 1766797027,
+                "actualDepartureTime": 1766797364,
+                "scheduledArrivalTime": 1766796300,
+                "scheduledDepartureTime": 1766796420,
+                "stopIndex": 18,
+                "platformSources": "\n\u00013 \u0001",
+                "station_name": "Panagarh"
+            },
+            {
+                "platformNumber": "3",
+                "stationCode": "MNAE",
+                "scheduledArrivalDelaySecs": 810,
+                "scheduledDepartureDelaySecs": 1036,
+                "actualArrivalTime": 1766797710,
+                "actualDepartureTime": 1766797996,
+                "scheduledArrivalTime": 1766796900,
+                "scheduledDepartureTime": 1766796960,
+                "stopIndex": 19,
+                "platformSources": "\n\u00013\u0018\u0003",
+                "station_name": "Mankar"
+            },
+            {
+                "platformNumber": "5",
+                "stationCode": "BWN",
+                "actualArrivalTime": 1766799188,
+                "scheduledArrivalTime": 1766799300,
+                "scheduledDepartureTime": 1766799420,
+                "stopIndex": 26,
+                "platformSources": "\n\u00015\u0018\u0006",
+                "station_name": "Barddhaman Junction"
+            },
+            {
+                "platformNumber": "12",
+                "stationCode": "HWH",
+                "actualArrivalTime": 1766805522,
+                "scheduledArrivalTime": 1766806200,
+                "stopIndex": 61,
+                "platformSources": "\n\u000212 \u0001",
+                "station_name": "Howrah Junction"
+            }
+        ],
+        "dataSource": "OFFICIAL",
+        "unmappedField_13": ""
+    }
+}

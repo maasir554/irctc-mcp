@@ -73,4 +73,5 @@ class RailwaysAPIResponse(BaseModel):
     success: bool
     # Even 'data' can be None if success is False (e.g., "Invalid PNR")
     data: Optional[PNRData] = None
+    message: Optional[str] = None
     generatedTimeStamp: int

@@ -1,9 +1,9 @@
 import os
 from dotenv import load_dotenv
 import httpx
-from schemas import Passenger, PNRData, RailwaysAPIResponse
+from pnr_schemas import Passenger, PNRData, RailwaysAPIResponse
 from typing import List
-from status_decoders import decode_booking_status
+from status_decoders import decode_booking_status, decode_berth
 
 load_dotenv()
 
@@ -43,6 +43,7 @@ def checkConfirmStatus(passengers:List[Passenger])->str:
     for p in passengers:        
         status = decode_booking_status(p.bookingStatus)
         response += f"Passenger-{p.passengerSerialNumber}: {status}\n"
+    
     return response if response != "" else "Confirm status not available."
 
 def getCoachAndBerth(passengers:List[Passenger])->str:
@@ -50,11 +51,18 @@ def getCoachAndBerth(passengers:List[Passenger])->str:
     for p in passengers:
         coach_and_birth = "Not Confirmed"
 
-        if p.bookingStatus == 'CNF':
-            coach_and_birth= f"Coach: {p.currentCoachId}, Berth: {p.currentBerthNo}" 
+        if p.bookingStatus in ['CNF', 'RAC']:
+            coach_and_birth= f"Coach: {p.currentCoachId}, Berth: {p.currentBerthNo} - ({decode_berth(p.currentBerthCode)})" 
         
         response += f"Passenger-{p.passengerSerialNumber}: {coach_and_birth}\n"
 
-    return response
+    return response if response != "" else "Coach & Birth not available"
 
-
+def getWaitListPosition(passengers:List[Passenger]) -> str:
+    response = ""
+    for p in passengers:
+        position = str(p.bookingStatusDetails).split('/')
+        if p.bookingStatus in ['CNF', 'RAC']:
+            position = "Already Confirmed"
+        response += f"Passenger-{p.passengerSerialNumber}: {position[1]} in {decode_booking_status(position[0])}({position[0]})\n"
+    return response if response != "" else "Unable to get waitlist position."
