@@ -1,0 +1,57 @@
+{
+    "success": true,
+    "data": {
+        "pnrNumber": "8341223680",
+        "dateOfJourney": "Jan 24, 2026 7:05:00 PM",
+        "trainNumber": "19309",
+        "trainName": "SHANTI EXPRESS",
+        "sourceStation": "ADI",
+        "destinationStation": "INDB",
+        "reservationUpto": "INDB",
+        "boardingPoint": "ADI",
+        "journeyClass": "SL",
+        "numberOfpassenger": 1,
+        "chartStatus": "Chart Not Prepared",
+        "informationMessage": [
+            ""
+        ],
+        "passengerList": [
+            {
+                "passengerSerialNumber": 1,
+                "concessionOpted": false,
+                "forGoConcessionOpted": false,
+                "passengerIcardFlag": false,
+                "childBerthFlag": false,
+                "passengerNationality": "IN",
+                "passengerQuota": "GN",
+                "passengerCoachPosition": 0,
+                "waitListType": 0,
+                "bookingStatusIndex": 0,
+                "bookingStatus": "CNF",
+                "bookingCoachId": "S4",
+                "bookingBerthNo": 64,
+                "bookingBerthCode": "SU",
+                "bookingStatusDetails": "CNF/S4/64/SU",
+                "currentStatusIndex": 0,
+                "currentStatus": "CNF",
+                "currentCoachId": "S4",
+                "currentBerthNo": 64,
+                "currentBerthCode": "SU",
+                "currentStatusDetails": "CNF/S4/64/SU"
+            }
+        ],
+        "timeStamp": "Dec 27, 2025 2:51:21 PM",
+        "bookingFare": 320,
+        "ticketFare": 320,
+        "quota": "GN",
+        "reasonType": "S",
+        "ticketTypeInPrs": "E",
+        "vikalpStatus": "Yes",
+        "waitListType": 0,
+        "bookingDate": "Nov 28, 2025 10:28:31 PM",
+        "arrivalDate": "Jan 25, 2026 5:50:00 AM",
+        "distance": 526,
+        "isWL": "N"
+    },
+    "generatedTimeStamp": 1766827281878
+}

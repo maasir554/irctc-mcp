@@ -85,7 +85,7 @@ async def get_forecast(latitude: float, longitude: float) -> str:
                         Wind: {period['windSpeed']} {period["windDirection"]}
                         Forecast" {period['detailedForecast']}
                         """
-            forecasts.append(forecast)
+            forecasts.append(forecasts)
         return "\n---\n".join(forecasts)
         
 def main():
