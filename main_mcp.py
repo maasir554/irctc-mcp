@@ -6,6 +6,7 @@ from train_status_functions import (
     get_train_numbers_from_name,
     get_expected_arrival_at_station,
     get_current_train_position,
+    get_train_route,
 )
 
 mcp = FastMCP("Indian Railway Live Info")
@@ -146,6 +147,21 @@ async def search_train_numbers(train_name: str) -> str:
         response += f"  • {train.number} - {train.name} ({train.from_stn_code} → {train.to_stn_code})\n"
     return response
 
+@mcp.tool
+async def get_train_complete_route(train_number: str) -> str:
+    """
+    Get the complete route of a train showing all stations in sequence.
+    
+    Args:
+        train_number: The train number (e.g., "12618")
+    """
+    response = await fetch_train_status(train_number)
+    if not response:
+        return "Error fetching train status. Please check the train number."
+    if not response.success:
+        return "Train status not available. Please verify the train number."
+    
+    return get_train_route(response)
 
 
 def main():

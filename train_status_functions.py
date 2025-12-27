@@ -260,3 +260,29 @@ def get_current_train_position(train_status: TrainStatusResponse) -> str:
     return result
 
 
+def get_train_route(train_status: TrainStatusResponse) -> str:
+    """
+    Get the complete route of a train with all stations in sequence.
+    
+    Args:
+        train_status: The TrainStatusResponse object from fetch_train_status
+    
+    Returns:
+        A formatted string showing all stations with names and codes in sequence
+    """
+    if not train_status.data.route:
+        return "No route information available"
+    
+    # Sort stations by stop_index to ensure correct order
+    sorted_route = sorted(train_status.data.route, key=lambda s: s.stop_index)
+    
+    # Format each station as "Station Name (CODE)"
+    station_entries = [
+        f"{station.station_name} ({station.station_code})"
+        for station in sorted_route
+    ]
+    
+    # Join with arrows to show direction
+    route_string = " -> ".join(station_entries)
+    
+    return route_string
