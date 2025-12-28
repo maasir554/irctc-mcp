@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import httpx
 from pnr_schemas import Passenger, PNRData, RailwaysAPIResponse
 from typing import List
-from status_decoders import decode_booking_status, decode_berth
+from status_decoders import decode_ticket_status, decode_berth
 
 load_dotenv()
 
@@ -41,7 +41,7 @@ async def fetch_pnr_details(pnr_number: str) -> RailwaysAPIResponse | None:
 def checkConfirmStatus(passengers:List[Passenger])->str:
     response = ""
     for p in passengers:        
-        status = decode_booking_status(p.bookingStatus)
+        status = decode_ticket_status(p.currentStatus)
         response += f"Passenger-{p.passengerSerialNumber}: {status}\n"
     
     return response if response != "" else "Confirm status not available."
@@ -51,7 +51,7 @@ def getCoachAndBerth(passengers:List[Passenger])->str:
     for p in passengers:
         coach_and_birth = "Not Confirmed"
 
-        if p.bookingStatus in ['CNF', 'RAC']:
+        if p.currentStatus in ['CNF', 'RAC']:
             coach_and_birth= f"Coach: {p.currentCoachId}, Berth: {p.currentBerthNo} - ({decode_berth(p.currentBerthCode)})" 
         
         response += f"Passenger-{p.passengerSerialNumber}: {coach_and_birth}\n"
@@ -59,10 +59,19 @@ def getCoachAndBerth(passengers:List[Passenger])->str:
     return response if response != "" else "Coach & Birth not available"
 
 def getWaitListPosition(passengers:List[Passenger]) -> str:
+    """
+    If any passenger's current status is not onfirmed or RAC, then get 
+    its waitlist position.
+    
+    :param passengers: Description
+    :type passengers: List[Passenger]
+    :return: Description
+    :rtype: str
+    """
     response = ""
     for p in passengers:
         position = str(p.bookingStatusDetails).split('/')
-        if p.bookingStatus in ['CNF', 'RAC']:
+        if p.currentStatus in ['CNF', 'RAC']:
             position = "Already Confirmed"
-        response += f"Passenger-{p.passengerSerialNumber}: {position[1]} in {decode_booking_status(position[0])}({position[0]})\n"
+        response += f"Passenger-{p.passengerSerialNumber}: {position[1]} in {decode_ticket_status(position[0])}({position[0]})\n"
     return response if response != "" else "Unable to get waitlist position."

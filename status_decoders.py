@@ -31,7 +31,7 @@ BERTH_MAP = {
     "AS": "Aisle Seat",  # Chair Car
 }
 
-def decode_booking_status(status_code: str | None) -> str:
+def decode_ticket_status(status_code: str | None) -> str:
     if not status_code:
         return "Unknown Status"
     
