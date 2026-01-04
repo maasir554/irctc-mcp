@@ -1,0 +1,1324 @@
+{
+    "success": true,
+    "user_id": 0,
+    "train_number": "19309",
+    "train_name": "SHANTI EXPRESS",
+    "gps_unable": true,
+    "train_start_date": "2026-01-04",
+    "notification_date": "2026-01-04",
+    "at_src_dstn": false,
+    "at_src": false,
+    "at_dstn": false,
+    "is_run_day": true,
+    "refresh_interval": 60,
+    "source": "ADI",
+    "destination": "INDB",
+    "source_stn_name": "AHMEDABAD JN",
+    "dest_stn_name": "INDORE JN BG",
+    "run_days": "MON,TUE,WED,THU,FRI,SAT,SUN",
+    "journey_time": 635,
+    "std": "2026-01-04 19:10",
+    "fog_incidence_probability": 0,
+    "pantry_available": false,
+    "cur_refresh_interval": 30,
+    "data_from": "mntes",
+    "halt": 0,
+    "new_alert_id": 14,
+    "new_alert_msg": "This train was scheduled to start from AHMEDABAD JN(ADI) at 19:15 on 2026-01-04",
+    "diverted_stations": null,
+    "primary_alert": 1,
+    "instance_alert": 0,
+    "related_alert": 0,
+    "late_update": false,
+    "is_ry_eta": true,
+    "update_time": "2026-01-04 23:48:00 +0530",
+    "is_on_train": false,
+    "on_train_error_msg": "",
+    "travelling_towards": "Travelling East",
+    "distance_from_source": 248,
+    "total_distance": 525,
+    "avg_speed": 0,
+    "a_min": 1427,
+    "si_no": 48,
+    "current_station_code": "BIO",
+    "current_station_name": "BORDI~",
+    "status": "T",
+    "eta": "23:47",
+    "etd": "23:47",
+    "delay": 7,
+    "ahead_distance": 1,
+    "ahead_distance_text": "1 km ahead",
+    "status_as_of": "As of few seconds ago",
+    "local_address": "",
+    "platform_number": 0,
+    "cur_stn_sta": "23:40",
+    "cur_stn_std": "23:40",
+    "is_possibly_on_train": false,
+    "stoppage_number": 0,
+    "a_day": 0,
+    "status_as_of_min": 0,
+    "dfp_carousel": {},
+    "upcoming_stations": [
+        {
+            "si_no": 0,
+            "station_code": "",
+            "station_name": "",
+            "distance_from_source": 0,
+            "distance_from_current_station": 0,
+            "distance_from_current_station_txt": "",
+            "sta": "",
+            "eta": "",
+            "etd": "",
+            "halt": 0,
+            "a_day": 0,
+            "arrival_delay": 0,
+            "fog_incidence_probability": 0,
+            "platform_number": 0,
+            "on_time_rating": 0,
+            "is_rail_heads": false,
+            "station_lat": 0.0,
+            "station_lng": 0.0,
+            "hotel_data": {
+                "hotel_available": false,
+                "deeplink": "",
+                "hotel_city_id": 0,
+                "hotel_city_name": ""
+            },
+            "food_data": {
+                "food_available": false,
+                "deeplink": "",
+                "drink_brand_icon": "",
+                "food_home_page_deeplink": ""
+            },
+            "non_stops": [
+                {
+                    "si_no": 49,
+                    "station_code": "ANAS",
+                    "station_name": "ANAS",
+                    "is_diverted_station": false,
+                    "distance_from_source": 255,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 50,
+                    "station_code": "NRH",
+                    "station_name": "NAHARGARH",
+                    "is_diverted_station": false,
+                    "distance_from_source": 263,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 51,
+            "station_code": "MGN",
+            "station_name": "MEGHNAGAR",
+            "is_diverted_station": false,
+            "distance_from_source": 269,
+            "distance_from_current_station": 21,
+            "distance_from_current_station_txt": "Next stop 21 kms to go",
+            "sta": "23:57",
+            "std": "23:59",
+            "eta": "00:02",
+            "etd": "00:04",
+            "halt": 2,
+            "a_day": 1,
+            "a_min": 1442,
+            "arrival_delay": 5,
+            "fog_incidence_probability": 0,
+            "platform_number": 1,
+            "on_time_rating": 0,
+            "is_rail_heads": false,
+            "station_lat": 22.907329,
+            "station_lng": 74.539704,
+            "stoppage_number": 10,
+            "day": 1,
+            "eta_a_min": 1442,
+            "food_available": false,
+            "hotel_data": {
+                "hotel_available": false,
+                "deeplink": "",
+                "hotel_city_id": 0,
+                "hotel_city_name": ""
+            },
+            "food_data": {
+                "food_available": false,
+                "deeplink": "",
+                "food_home_page_deeplink": "",
+                "drink_brand_icon": "",
+                "title": "Order Food @ MGN",
+                "message": "Enjoy 10% discount",
+                "pantry_message": "No pantry available in this train",
+                "closing_in": ""
+            },
+            "non_stops": [
+                {
+                    "si_no": 52,
+                    "station_code": "THDR",
+                    "station_name": "THANDLA RD",
+                    "is_diverted_station": false,
+                    "distance_from_source": 290,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 53,
+                    "station_code": "BJG",
+                    "station_name": "BAJRANGARH",
+                    "is_diverted_station": false,
+                    "distance_from_source": 293,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 54,
+                    "station_code": "PCN",
+                    "station_name": "PANCH PIPILA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 299,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 55,
+                    "station_code": "AGR",
+                    "station_name": "AMARGARH",
+                    "is_diverted_station": false,
+                    "distance_from_source": 301,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 56,
+                    "station_code": "BMI",
+                    "station_name": "BAMNIA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 304,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 57,
+                    "station_code": "BOG",
+                    "station_name": "BHAIRONGARH",
+                    "is_diverted_station": false,
+                    "distance_from_source": 310,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 58,
+                    "station_code": "RTI",
+                    "station_name": "RAOTI",
+                    "is_diverted_station": false,
+                    "distance_from_source": 322,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 59,
+                    "station_code": "BILD",
+                    "station_name": "BILDI",
+                    "is_diverted_station": false,
+                    "distance_from_source": 329,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 60,
+                    "station_code": "MRN",
+                    "station_name": "MORWANI",
+                    "is_diverted_station": false,
+                    "distance_from_source": 338,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 61,
+                    "station_code": "DRRN",
+                    "station_name": "DR R K NAGAR",
+                    "is_diverted_station": false,
+                    "distance_from_source": 344,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 62,
+                    "station_code": "RTD",
+                    "station_name": "RATLAM A CABIN",
+                    "is_diverted_station": false,
+                    "distance_from_source": 349,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 63,
+            "station_code": "RTM",
+            "station_name": "RATLAM JN",
+            "is_diverted_station": false,
+            "distance_from_source": 350,
+            "distance_from_current_station": 102,
+            "distance_from_current_station_txt": "Next stop 102 kms to go",
+            "sta": "01:35",
+            "std": "01:40",
+            "eta": "01:35",
+            "etd": "01:40",
+            "halt": 5,
+            "a_day": 1,
+            "a_min": 1535,
+            "arrival_delay": 0,
+            "fog_incidence_probability": 0,
+            "platform_number": 6,
+            "on_time_rating": 7,
+            "is_rail_heads": false,
+            "station_lat": 23.34068,
+            "station_lng": 75.051126,
+            "stoppage_number": 11,
+            "day": 1,
+            "eta_a_min": 1535,
+            "food_available": false,
+            "hotel_data": {
+                "hotel_available": false,
+                "deeplink": "",
+                "hotel_city_id": 0,
+                "hotel_city_name": ""
+            },
+            "food_data": {
+                "food_available": false,
+                "deeplink": "",
+                "food_home_page_deeplink": "",
+                "drink_brand_icon": "",
+                "title": "Order Food @ RTM",
+                "message": "Enjoy 10% discount",
+                "pantry_message": "No pantry available in this train",
+                "closing_in": ""
+            },
+            "non_stops": [
+                {
+                    "si_no": 64,
+                    "station_code": "RTME",
+                    "station_name": "RATLAM EAST CABIN",
+                    "is_diverted_station": false,
+                    "distance_from_source": 353,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 65,
+                    "station_code": "BOD",
+                    "station_name": "BANGROD",
+                    "is_diverted_station": false,
+                    "distance_from_source": 360,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 66,
+                    "station_code": "RNH",
+                    "station_name": "RUNKHERA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 367,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 67,
+            "station_code": "KUH",
+            "station_name": "KHACHROD",
+            "is_diverted_station": false,
+            "distance_from_source": 377,
+            "distance_from_current_station": 129,
+            "distance_from_current_station_txt": "Next stop 129 kms to go",
+            "sta": "02:07",
+            "std": "02:09",
+            "eta": "02:07",
+            "etd": "02:09",
+            "halt": 2,
+            "a_day": 1,
+            "a_min": 1567,
+            "arrival_delay": 0,
+            "fog_incidence_probability": 0,
+            "platform_number": 2,
+            "on_time_rating": 7,
+            "is_rail_heads": false,
+            "station_lat": 23.442853,
+            "station_lng": 75.286517,
+            "stoppage_number": 12,
+            "day": 1,
+            "eta_a_min": 1567,
+            "food_available": false,
+            "hotel_data": {
+                "hotel_available": false,
+                "deeplink": "",
+                "hotel_city_id": 0,
+                "hotel_city_name": ""
+            },
+            "food_data": {
+                "food_available": false,
+                "deeplink": "",
+                "food_home_page_deeplink": "",
+                "drink_brand_icon": "",
+                "title": "Order Food @ KUH",
+                "message": "Enjoy 10% discount",
+                "pantry_message": "No pantry available in this train",
+                "closing_in": ""
+            },
+            "non_stops": [
+                {
+                    "si_no": 68,
+                    "station_code": "BRNA",
+                    "station_name": "BERAWANYA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 383,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 69,
+            "station_code": "NAD",
+            "station_name": "NAGDA JN",
+            "is_diverted_station": false,
+            "distance_from_source": 391,
+            "distance_from_current_station": 143,
+            "distance_from_current_station_txt": "Next stop 143 kms to go",
+            "sta": "02:45",
+            "std": "02:50",
+            "eta": "02:45",
+            "etd": "02:50",
+            "halt": 5,
+            "a_day": 1,
+            "a_min": 1605,
+            "arrival_delay": 0,
+            "fog_incidence_probability": 0,
+            "platform_number": 2,
+            "on_time_rating": 8,
+            "is_rail_heads": false,
+            "station_lat": 23.45616,
+            "station_lng": 75.412731,
+            "stoppage_number": 13,
+            "day": 1,
+            "eta_a_min": 1605,
+            "food_available": false,
+            "hotel_data": {
+                "hotel_available": false,
+                "deeplink": "",
+                "hotel_city_id": 0,
+                "hotel_city_name": ""
+            },
+            "food_data": {
+                "food_available": false,
+                "deeplink": "",
+                "food_home_page_deeplink": "",
+                "drink_brand_icon": "",
+                "title": "Order Food @ NAD",
+                "message": "Enjoy 10% discount",
+                "pantry_message": "No pantry available in this train",
+                "closing_in": ""
+            },
+            "non_stops": [
+                {
+                    "si_no": 70,
+                    "station_code": "BTSD",
+                    "station_name": "BHATISUDA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 398,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 71,
+                    "station_code": "PPG",
+                    "station_name": "PIPLODA BAGLA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 403,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 72,
+                    "station_code": "UNL",
+                    "station_name": "UNHEL",
+                    "is_diverted_station": false,
+                    "distance_from_source": 409,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 73,
+                    "station_code": "PSO",
+                    "station_name": "PALSORA MAKRAWA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 418,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 74,
+                    "station_code": "ASL",
+                    "station_name": "ASLAODA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 426,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 75,
+                    "station_code": "GRFB",
+                    "station_name": "GAMBHIR BR",
+                    "is_diverted_station": false,
+                    "distance_from_source": 429,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 76,
+                    "station_code": "NKI",
+                    "station_name": "NAIKHERI",
+                    "is_diverted_station": false,
+                    "distance_from_source": 436,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 77,
+                    "station_code": "SPBG",
+                    "station_name": "SIPRA BRIDGE",
+                    "is_diverted_station": false,
+                    "distance_from_source": 443,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 78,
+            "station_code": "UJN",
+            "station_name": "UJJAIN JN",
+            "is_diverted_station": false,
+            "distance_from_source": 446,
+            "distance_from_current_station": 198,
+            "distance_from_current_station_txt": "Next stop 198 kms to go",
+            "sta": "03:45",
+            "std": "03:50",
+            "eta": "03:45",
+            "etd": "03:50",
+            "halt": 5,
+            "a_day": 1,
+            "a_min": 1665,
+            "arrival_delay": 0,
+            "fog_incidence_probability": 0,
+            "platform_number": 1,
+            "on_time_rating": 9,
+            "is_rail_heads": false,
+            "station_lat": 23.178554,
+            "station_lng": 75.781803,
+            "stoppage_number": 14,
+            "day": 1,
+            "eta_a_min": 1665,
+            "food_available": false,
+            "hotel_data": {
+                "hotel_available": false,
+                "deeplink": "",
+                "hotel_city_id": 0,
+                "hotel_city_name": ""
+            },
+            "food_data": {
+                "food_available": false,
+                "deeplink": "",
+                "food_home_page_deeplink": "",
+                "drink_brand_icon": "",
+                "title": "Order Food @ UJN",
+                "message": "Enjoy 10% discount",
+                "pantry_message": "No pantry available in this train",
+                "closing_in": ""
+            },
+            "non_stops": [
+                {
+                    "si_no": 79,
+                    "station_code": "UGNC",
+                    "station_name": "UJJAIN C CABIN",
+                    "is_diverted_station": false,
+                    "distance_from_source": 448,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 80,
+                    "station_code": "VRG",
+                    "station_name": "VIKRAMNAGAR",
+                    "is_diverted_station": false,
+                    "distance_from_source": 451,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 81,
+                    "station_code": "KDHA",
+                    "station_name": "KARCHHA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 463,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 82,
+                    "station_code": "UDM",
+                    "station_name": "UNDASA MADHOPUR",
+                    "is_diverted_station": false,
+                    "distance_from_source": 471,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 83,
+                    "station_code": "NRGR",
+                    "station_name": "NARANJIPUR",
+                    "is_diverted_station": false,
+                    "distance_from_source": 477,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 84,
+            "station_code": "DWX",
+            "station_name": "DEWAS",
+            "is_diverted_station": false,
+            "distance_from_source": 486,
+            "distance_from_current_station": 238,
+            "distance_from_current_station_txt": "Next stop 238 kms to go",
+            "sta": "04:28",
+            "std": "04:30",
+            "eta": "04:28",
+            "etd": "04:30",
+            "halt": 2,
+            "a_day": 1,
+            "a_min": 1708,
+            "arrival_delay": 0,
+            "fog_incidence_probability": 0,
+            "platform_number": 1,
+            "on_time_rating": 9,
+            "is_rail_heads": false,
+            "station_lat": 22.977676,
+            "station_lng": 76.051311,
+            "stoppage_number": 15,
+            "day": 1,
+            "eta_a_min": 1708,
+            "food_available": false,
+            "hotel_data": {
+                "hotel_available": false,
+                "deeplink": "",
+                "hotel_city_id": 0,
+                "hotel_city_name": ""
+            },
+            "food_data": {
+                "food_available": false,
+                "deeplink": "",
+                "food_home_page_deeplink": "",
+                "drink_brand_icon": "",
+                "title": "Order Food @ DWX",
+                "message": "Enjoy 10% discount",
+                "pantry_message": "No pantry available in this train",
+                "closing_in": ""
+            },
+            "non_stops": [
+                {
+                    "si_no": 85,
+                    "station_code": "BNJN",
+                    "station_name": "BINJANA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 495,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 86,
+                    "station_code": "BLAX",
+                    "station_name": "BARLAI",
+                    "is_diverted_station": false,
+                    "distance_from_source": 500,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 87,
+                    "station_code": "DKCH",
+                    "station_name": "DAKACHA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 504,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 88,
+                    "station_code": "MGG",
+                    "station_name": "MANGLIYA GAON",
+                    "is_diverted_station": false,
+                    "distance_from_source": 511,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 89,
+                    "station_code": "LMNR",
+                    "station_name": "LAKSHMIBAI NAGAR",
+                    "is_diverted_station": false,
+                    "distance_from_source": 522,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 90,
+            "station_code": "INDB",
+            "station_name": "INDORE JN BG",
+            "is_diverted_station": false,
+            "distance_from_source": 525,
+            "distance_from_current_station": 277,
+            "distance_from_current_station_txt": "Next stop 277 kms to go",
+            "sta": "05:45",
+            "std": "05:45",
+            "eta": "05:45",
+            "etd": "05:45",
+            "halt": 0,
+            "a_day": 1,
+            "a_min": 1785,
+            "arrival_delay": 0,
+            "fog_incidence_probability": 0,
+            "platform_number": 4,
+            "on_time_rating": 10,
+            "is_rail_heads": false,
+            "station_lat": 22.71729,
+            "station_lng": 75.868149,
+            "stoppage_number": 16,
+            "day": 1,
+            "eta_a_min": 1785,
+            "food_available": false,
+            "hotel_data": {
+                "hotel_available": false,
+                "deeplink": "",
+                "hotel_city_id": 0,
+                "hotel_city_name": ""
+            },
+            "food_data": {
+                "food_available": false,
+                "deeplink": "",
+                "food_home_page_deeplink": "",
+                "drink_brand_icon": "",
+                "title": "Order Food @ INDB",
+                "message": "Enjoy 10% discount",
+                "pantry_message": "No pantry available in this train",
+                "closing_in": ""
+            },
+            "non_stops": []
+        }
+    ],
+    "previous_stations": [
+        {
+            "si_no": 1,
+            "station_code": "ADI",
+            "station_name": "AHMEDABAD JN",
+            "is_diverted_station": false,
+            "distance_from_source": 0,
+            "sta": "19:00",
+            "std": "19:10",
+            "eta": "19:15",
+            "etd": "19:15",
+            "halt": 0,
+            "a_day": 0,
+            "arrival_delay": 15,
+            "platform_number": 4,
+            "station_lat": 23.025475,
+            "station_lng": 72.601476,
+            "stoppage_number": 1,
+            "non_stops": [
+                {
+                    "si_no": 2,
+                    "station_code": "KKF",
+                    "station_name": "KANKARIA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 2,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 3,
+                    "station_code": "KKEC",
+                    "station_name": "KANKARIA SOUTH",
+                    "is_diverted_station": false,
+                    "distance_from_source": 2,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 4,
+                    "station_code": "MAN",
+                    "station_name": "MANI NAGAR",
+                    "is_diverted_station": false,
+                    "distance_from_source": 3,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 5,
+                    "station_code": "VTA",
+                    "station_name": "VATVA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 8,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 6,
+                    "station_code": "VY",
+                    "station_name": "VATVA YARD",
+                    "is_diverted_station": false,
+                    "distance_from_source": 9,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 7,
+                    "station_code": "GER",
+                    "station_name": "GERATPUR",
+                    "is_diverted_station": false,
+                    "distance_from_source": 13,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 8,
+                    "station_code": "BJD",
+                    "station_name": "BAREJADI",
+                    "is_diverted_station": false,
+                    "distance_from_source": 17,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 9,
+                    "station_code": "KANJ",
+                    "station_name": "KANIL",
+                    "is_diverted_station": false,
+                    "distance_from_source": 21,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 10,
+                    "station_code": "NEP",
+                    "station_name": "NENPUR",
+                    "is_diverted_station": false,
+                    "distance_from_source": 24,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 11,
+            "station_code": "MHD",
+            "station_name": "MHMDVD KHEDA RD",
+            "is_diverted_station": false,
+            "distance_from_source": 28,
+            "sta": "19:46",
+            "std": "19:48",
+            "eta": "19:51",
+            "etd": "19:53",
+            "halt": 2,
+            "a_day": 0,
+            "arrival_delay": 5,
+            "platform_number": 3,
+            "station_lat": 22.819226,
+            "station_lng": 72.752151,
+            "stoppage_number": 2,
+            "non_stops": [
+                {
+                    "si_no": 12,
+                    "station_code": "GTE",
+                    "station_name": "GOTHAJ",
+                    "is_diverted_station": false,
+                    "distance_from_source": 36,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 13,
+            "station_code": "ND",
+            "station_name": "NADIAD JN",
+            "is_diverted_station": false,
+            "distance_from_source": 45,
+            "sta": "20:02",
+            "std": "20:04",
+            "eta": "20:07",
+            "etd": "20:09",
+            "halt": 2,
+            "a_day": 0,
+            "arrival_delay": 5,
+            "platform_number": 1,
+            "station_lat": 22.694566,
+            "station_lng": 72.856178,
+            "stoppage_number": 3,
+            "non_stops": [
+                {
+                    "si_no": 14,
+                    "station_code": "UTD",
+                    "station_name": "UTARSANDA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 51,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 15,
+                    "station_code": "KBRV",
+                    "station_name": "KANJARI BORIYAV",
+                    "is_diverted_station": false,
+                    "distance_from_source": 56,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 16,
+            "station_code": "ANND",
+            "station_name": "ANAND JN",
+            "is_diverted_station": false,
+            "distance_from_source": 64,
+            "sta": "20:20",
+            "std": "20:22",
+            "eta": "20:18",
+            "etd": "20:22",
+            "halt": 4,
+            "a_day": 0,
+            "arrival_delay": 0,
+            "platform_number": 4,
+            "station_lat": 22.561787,
+            "station_lng": 72.966213,
+            "stoppage_number": 4,
+            "non_stops": [
+                {
+                    "si_no": 17,
+                    "station_code": "VXD",
+                    "station_name": "VADOD",
+                    "is_diverted_station": false,
+                    "distance_from_source": 69,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 18,
+                    "station_code": "ADD",
+                    "station_name": "ADAS ROAD",
+                    "is_diverted_station": false,
+                    "distance_from_source": 72,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 19,
+                    "station_code": "VDA",
+                    "station_name": "VASAD JN",
+                    "is_diverted_station": false,
+                    "distance_from_source": 75,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 20,
+                    "station_code": "NDR",
+                    "station_name": "NANDESARI",
+                    "is_diverted_station": false,
+                    "distance_from_source": 79,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 21,
+                    "station_code": "RNO",
+                    "station_name": "RANOLI",
+                    "is_diverted_station": false,
+                    "distance_from_source": 81,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 22,
+                    "station_code": "KRCA",
+                    "station_name": "KARACHIYA YARD",
+                    "is_diverted_station": false,
+                    "distance_from_source": 83,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 23,
+                    "station_code": "BJW",
+                    "station_name": "BAJVA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 85,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 24,
+                    "station_code": "BDA",
+                    "station_name": "VADODARA C CABIN",
+                    "is_diverted_station": false,
+                    "distance_from_source": 90,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 25,
+                    "station_code": "BRGZ",
+                    "station_name": "VADODARA E CABIN",
+                    "is_diverted_station": false,
+                    "distance_from_source": 93,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 26,
+            "station_code": "CYI",
+            "station_name": "CHHAYAPURI",
+            "is_diverted_station": false,
+            "distance_from_source": 96,
+            "sta": "21:17",
+            "std": "21:22",
+            "eta": "21:07",
+            "etd": "21:23",
+            "halt": 16,
+            "a_day": 0,
+            "arrival_delay": 0,
+            "platform_number": 2,
+            "station_lat": 22.388174,
+            "station_lng": 73.179588,
+            "stoppage_number": 5,
+            "non_stops": [
+                {
+                    "si_no": 27,
+                    "station_code": "PIO",
+                    "station_name": "PILOL",
+                    "is_diverted_station": false,
+                    "distance_from_source": 97,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 28,
+                    "station_code": "AIR",
+                    "station_name": "ALINDRA ROAD",
+                    "is_diverted_station": false,
+                    "distance_from_source": 105,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 29,
+                    "station_code": "SMLA",
+                    "station_name": "SAMLAYA JN",
+                    "is_diverted_station": false,
+                    "distance_from_source": 114,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 30,
+                    "station_code": "LAN",
+                    "station_name": "LOTANA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 122,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 31,
+                    "station_code": "CPN",
+                    "station_name": "CHAMPANER RD JN",
+                    "is_diverted_station": false,
+                    "distance_from_source": 126,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 32,
+                    "station_code": "BKRL",
+                    "station_name": "BAKROL",
+                    "is_diverted_station": false,
+                    "distance_from_source": 132,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 33,
+            "station_code": "DRL",
+            "station_name": "DEROL",
+            "is_diverted_station": false,
+            "distance_from_source": 139,
+            "sta": "22:04",
+            "std": "22:06",
+            "eta": "22:15",
+            "etd": "22:17",
+            "halt": 2,
+            "a_day": 0,
+            "arrival_delay": 11,
+            "platform_number": 1,
+            "station_lat": 22.629975,
+            "station_lng": 73.461928,
+            "stoppage_number": 6,
+            "non_stops": [
+                {
+                    "si_no": 34,
+                    "station_code": "BOA",
+                    "station_name": "BAHERIYA ROAD",
+                    "is_diverted_station": false,
+                    "distance_from_source": 146,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 35,
+                    "station_code": "KRSA",
+                    "station_name": "KHARSALIYA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 152,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 36,
+            "station_code": "GDA",
+            "station_name": "GODHRA JN",
+            "is_diverted_station": false,
+            "distance_from_source": 162,
+            "sta": "22:33",
+            "std": "22:35",
+            "eta": "22:36",
+            "etd": "22:38",
+            "halt": 2,
+            "a_day": 0,
+            "arrival_delay": 3,
+            "platform_number": 3,
+            "station_lat": 22.776894,
+            "station_lng": 73.603592,
+            "stoppage_number": 7,
+            "non_stops": [
+                {
+                    "si_no": 37,
+                    "station_code": "KIZ",
+                    "station_name": "KANSUDHI",
+                    "is_diverted_station": false,
+                    "distance_from_source": 167,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 38,
+                    "station_code": "CCL",
+                    "station_name": "CHANCHELAV",
+                    "is_diverted_station": false,
+                    "distance_from_source": 174,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 39,
+                    "station_code": "SAT",
+                    "station_name": "SANT ROAD",
+                    "is_diverted_station": false,
+                    "distance_from_source": 183,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 40,
+                    "station_code": "PPD",
+                    "station_name": "PIPLOD JN",
+                    "is_diverted_station": false,
+                    "distance_from_source": 194,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 41,
+            "station_code": "LMK",
+            "station_name": "LIMKHEDA",
+            "is_diverted_station": false,
+            "distance_from_source": 202,
+            "sta": "23:02",
+            "std": "23:04",
+            "eta": "23:11",
+            "etd": "23:13",
+            "halt": 2,
+            "a_day": 0,
+            "arrival_delay": 9,
+            "platform_number": 1,
+            "station_lat": 22.833544,
+            "station_lng": 73.984165,
+            "stoppage_number": 8,
+            "non_stops": [
+                {
+                    "si_no": 42,
+                    "station_code": "MAM",
+                    "station_name": "MANGAL MAHUDI",
+                    "is_diverted_station": false,
+                    "distance_from_source": 211,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 43,
+                    "station_code": "USRA",
+                    "station_name": "USRA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 217,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 44,
+                    "station_code": "JKT",
+                    "station_name": "JEKOT",
+                    "is_diverted_station": false,
+                    "distance_from_source": 224,
+                    "sta": "",
+                    "std": ""
+                },
+                {
+                    "si_no": 45,
+                    "station_code": "RET",
+                    "station_name": "RENTIA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 230,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        },
+        {
+            "si_no": 46,
+            "station_code": "DHD",
+            "station_name": "DAHOD",
+            "is_diverted_station": false,
+            "distance_from_source": 236,
+            "sta": "23:30",
+            "std": "23:32",
+            "eta": "23:40",
+            "etd": "23:42",
+            "halt": 2,
+            "a_day": 0,
+            "arrival_delay": 10,
+            "platform_number": 3,
+            "station_lat": 22.843907,
+            "station_lng": 74.253674,
+            "stoppage_number": 9,
+            "non_stops": [
+                {
+                    "si_no": 47,
+                    "station_code": "DHMA",
+                    "station_name": "DHAMARDA",
+                    "is_diverted_station": false,
+                    "distance_from_source": 241,
+                    "sta": "",
+                    "std": ""
+                }
+            ]
+        }
+    ],
+    "personalized_food_deeplink": "",
+    "travelling_from_lat_lng": [
+        "22.8664971",
+        "74.3471086"
+    ],
+    "travelling_to_lat_lng": [
+        "22.907329",
+        "74.539704"
+    ],
+    "bubble_message": {
+        "station_name": "BORDI~",
+        "message_type": "Crossed",
+        "station_time": "at 23:47"
+    },
+    "next_stoppage_info": {
+        "next_stoppage_title": "Next:",
+        "next_stoppage": "MEGHNAGAR",
+        "next_stoppage_time_diff": "in 14 mins",
+        "next_stoppage_delay": 5
+    },
+    "current_location_info": [
+        {
+            "type": 1,
+            "deeplink": "",
+            "img_url": "",
+            "label": "As of few seconds ago",
+            "message": "Crossed BORDI~ at 23:47",
+            "readable_message": "Crossed bordi at 23:47",
+            "hint": "Delay 7m"
+        },
+        {
+            "type": 2,
+            "deeplink": "",
+            "img_url": "",
+            "label": "As of few seconds ago",
+            "message": "21 kms to MEGHNAGAR",
+            "readable_message": "21 kilometer to meghnagar",
+            "hint": "248 kms Covered so far"
+        },
+        {
+            "type": 3,
+            "deeplink": "",
+            "img_url": "",
+            "label": "As of few seconds ago",
+            "message": "7 kms to ANAS",
+            "readable_message": "7 kilometer to anas",
+            "hint": "No-halt station"
+        },
+        {
+            "type": 4,
+            "deeplink": "",
+            "img_url": "",
+            "label": "As of few seconds ago",
+            "message": "1 km ahead of BORDI~",
+            "readable_message": "1 kilometer ahead of bordi",
+            "hint": "Travelling East"
+        }
+    ],
+    "ttb_card": {
+        "book_now_title": "Book instant train tickets",
+        "rating": "4.4/5",
+        "reviews": "1M reviews",
+        "downloads": "75M+ Downloads",
+        "text_1": "Free Cancellation",
+        "text_1_icon": "https://images.railyatri.in/ry_images_prod/freecancellation-1725005861.png",
+        "text_2": "Instant Refund",
+        "text_2_icon": "https://images.railyatri.in/ry_images_prod/instantrefund-1725005969.png",
+        "text_3": "24x7 Support",
+        "text_3_icon": "https://images.railyatri.in/ry_images_prod/support-1725005917.png",
+        "text_4": "Live Train Status",
+        "text_4_icon": "https://images.railyatri.in/ry_images_prod/livetrainstatus-1725005897.png"
+    },
+    "spent_time": 0.0431,
+    "disclaimer": "Train running status, coach position, chart preparation, and platform number are compiled from crowd-sourced data and may vary. For final confirmation, please recheck at the station on the day of travel. This information is not endorsed by Indian Railways or IRCTC, and RailYatri accepts no liability for its use."
+}

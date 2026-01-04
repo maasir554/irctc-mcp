@@ -103,3 +103,5 @@ def getJourneyOverview(pnr_info: RailwaysAPIResponse | None) -> str:
     response += f"Number of passengers: {data.numberOfpassenger}"
 
     return response
+
+# example pnr no: 8641842491
