@@ -118,7 +118,7 @@ async def get_train_numbers_from_name(train_name: str, limit: int = 8) -> list[T
 # Indian Standard Time offset (UTC+5:30)
 IST = timezone(timedelta(hours=5, minutes=30))
 
-
+# will be obsolete:- 
 def get_expected_arrival_at_station(train_status: TrainStatusResponse, station_code: str) -> str:
     """
     Get the expected arrival date and time of a train at a particular station.
@@ -186,7 +186,7 @@ def get_expected_arrival_at_station(train_status: TrainStatusResponse, station_c
     
     return f"Station {station_code_upper} not found in the train's route"
 
-
+# will be obsolete:- 
 def get_current_train_position(train_status: TrainStatusResponse) -> str:
     """
     Get the current position of a train.
@@ -259,7 +259,7 @@ def get_current_train_position(train_status: TrainStatusResponse) -> str:
     
     return result
 
-
+# preserve this, new api does not have this :- 
 def get_train_route(train_status: TrainStatusResponse) -> str:
     """
     Get the complete route of a train with all stations in sequence.

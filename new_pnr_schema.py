@@ -20,8 +20,8 @@ class PassengerStatus(BaseModel):
     BookingStatusIndex: str
     CurrentBerthNo: str
     CurrentCoachId: str
-    BookingBerthCode: str
-    CurrentBerthCode: str
+    BookingBerthCode: Optional[str] = None
+    CurrentBerthCode: Optional[str] = None
     CurrentStatusNew: str
     CurrentStatusIndex: str
 
@@ -77,8 +77,8 @@ class PNRData(BaseModel):
     VikalpData: str
     VikalpTransferred: bool
     VikalpTransferredMessage: str
-    FromDetails: StationDetails
-    BoardingPointDetails: StationDetails
+    FromDetails: Optional[StationDetails] = None
+    BoardingPointDetails: Optional[StationDetails] = None
 
 
 class PNRResponse(BaseModel):

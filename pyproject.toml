@@ -1,7 +1,7 @@
 [project]
-name = "pnr-check-mcp"
+name = "irctc-mcp"
 version = "0.1.0"
-description = "Add your description here"
+description = "This is a Model Context Protocol server to enable AI Agents get live updates on Indian Railways PNR no. and train running status."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
