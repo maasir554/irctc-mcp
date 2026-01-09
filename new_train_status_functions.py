@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 import httpx
 from new_train_status_schemas import (
     NewTrainStatusResponse,
-    TrainStatusData,
     UpcomingStation,
     PreviousStation,
 )
@@ -44,7 +43,11 @@ async def fetch_new_train_status(train_number: str, start_day: int = 0) -> NewTr
         try:
             response = await client.get(url, params=params, timeout=30.0)
             response.raise_for_status()
-            return NewTrainStatusResponse.model_validate(response.json())
+            json_data = response.json()
+            # Check if API returned success=False
+            if json_data.get("success") is False:
+                return None
+            return NewTrainStatusResponse.model_validate(json_data)
         except httpx.HTTPStatusError as e:
             print(f"HTTP error fetching train status: {e}")
             return None
@@ -355,3 +358,5 @@ def get_train_start_date(train_status: NewTrainStatusResponse) -> date | None:
         return datetime.strptime(train_status.data.train_start_date, "%Y-%m-%d").date()
     except (ValueError, AttributeError):
         return None
+    
+

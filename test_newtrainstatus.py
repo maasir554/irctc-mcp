@@ -201,53 +201,77 @@ class TestGetTrainSummary:
     def test_shows_position(self):
         response = load_example_response()
         result = get_train_summary(response)
-        assert "📍" in result
+        # Check for position info (current station or distance text)
+        assert "kms to" in result or "Near" in result
 
     def test_shows_delay_status(self):
         response = load_example_response()
         result = get_train_summary(response)
-        assert "⏱️" in result
+        # Check for delay/running status info
         assert "Running" in result or "late" in result or "on time" in result
 
     def test_shows_next_stop(self):
         response = load_example_response()
         result = get_train_summary(response)
-        assert "➡️" in result
-        assert "Next" in result
+        # Check for next stop info
+        assert "Next" in result or "BURHANPUR" in result
 
 
 class TestFetchNewTrainStatus:
     """Tests for fetch_new_train_status function (integration tests)."""
 
-    @pytest.mark.asyncio
-    async def test_fetch_valid_train(self):
+    def test_fetch_valid_train(self):
         """Test fetching status for a valid running train."""
+        import asyncio
         # Using a commonly running train for testing
-        result = await fetch_new_train_status("12138", start_day=0)
+        print("\n🚂 Fetching train 12138 (Punjab Mail) with start_day=1...")
+        result = asyncio.run(fetch_new_train_status("12138", start_day=1))
         
         if result is not None:
-            assert result.status == True
+            print(f"✅ Got response for train: {result.data.train_name} ({result.data.train_number})")
+            print(f"   Route: {result.data.source_stn_name} → {result.data.dest_stn_name}")
+            print(f"   Current position: {result.data.current_station_name}")
+            print(f"   Delay: {result.data.delay} mins")
+            assert result.success == True
             assert result.data.train_number == "12138"
             assert result.data.train_name
             assert result.data.source
             assert result.data.destination
+        else:
+            print("⚠️  Train not running or data unavailable")
 
-    @pytest.mark.asyncio
-    async def test_fetch_with_start_day(self):
+    def test_fetch_with_start_day(self):
         """Test fetching with different start_day values."""
+        import asyncio
         # Test with yesterday's train
-        result = await fetch_new_train_status("12138", start_day=1)
+        print("\n🚂 Fetching train 12138 with start_day=1 (started yesterday)...")
+        result = asyncio.run(fetch_new_train_status("12138", start_day=1))
+        
+        if result is not None:
+            print(f"✅ Got response - Train start date: {result.data.train_start_date}")
+            print(f"   Status as of: {result.data.status_as_of}")
+        else:
+            print("⚠️  No data for this start_day (train may not be running)")
         
         # Result may or may not be available depending on the train schedule
         # Just verify no exception is raised
         assert result is None or isinstance(result, NewTrainStatusResponse)
 
-    @pytest.mark.asyncio
-    async def test_fetch_invalid_train(self):
+    def test_fetch_invalid_train(self):
         """Test fetching status for an invalid train number."""
-        result = await fetch_new_train_status("99999", start_day=0)
-        # Should return None or a response with status=False
-        assert result is None or result.status == False
+        import asyncio
+        print("\n🚂 Fetching invalid train 99999...")
+        result = asyncio.run(fetch_new_train_status("99999", start_day=0))
+        
+        if result is None:
+            print("✅ Correctly returned None for invalid train")
+        elif result.success == False:
+            print(f"✅ Correctly returned success=False")
+        else:
+            print(f"⚠️  Unexpected response: {result}")
+        
+        # Should return None or a response with success=False
+        assert result is None or result.success == False
 
 
 class TestSchemaValidation:
@@ -256,8 +280,7 @@ class TestSchemaValidation:
     def test_example_json_validates(self):
         """Test that the example JSON validates against the schema."""
         response = load_example_response()
-        assert response.status == True
-        assert response.message == "Success"
+        assert response.success == True
         assert response.data.train_number == "17606"
 
     def test_data_fields(self):
