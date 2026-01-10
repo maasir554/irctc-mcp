@@ -221,6 +221,7 @@ def get_journey_overview(pnr_status: PNRResponse | None) -> str:
     response += f"Journey Class: {data.Class}\n"
     response += f"Quota: {data.Quota}\n"
     response += f"Number of Passengers: {data.PassengerCount}\n"
+    response += f"Expected Boarding Platform No.: {data.ExpectedPlatformNo}\n"
     response += f"Chart Prepared: {'Yes' if data.ChartPrepared else 'No'}"
     
     if data.HasPantry:

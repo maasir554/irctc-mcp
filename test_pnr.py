@@ -13,7 +13,7 @@ from pnr_functions import (
     getWaitListPosition,
 )
 from pnr_schemas import Passenger
-from status_decoders import decode_booking_status, decode_berth
+from status_decoders import decode_ticket_status, decode_berth
 
 
 # Sample PNR numbers for testing
@@ -195,18 +195,18 @@ def test_get_waitlist_position():
 
 # ==================== Decoder Tests ====================
 
-def test_decode_booking_status():
+def test_decode_ticket_status():
     """Test status code decoding."""
     print(f"\n{'='*50}")
-    print("Testing decode_booking_status")
+    print("Testing decode_ticket_status")
     print(f"{'='*50}")
     
-    assert decode_booking_status("CNF") == "Confirmed"
-    assert decode_booking_status("RAC") == "Reservation Against Cancellation"
-    assert decode_booking_status("WL") == "Waitlist"
-    assert decode_booking_status("GNWL") == "General Waitlist"
-    assert "Unknown" in decode_booking_status("XYZ")
-    assert decode_booking_status(None) == "Unknown Status"
+    assert decode_ticket_status("CNF") == "Confirmed"
+    assert decode_ticket_status("RAC") == "Reservation Against Cancellation"
+    assert decode_ticket_status("WL") == "Waitlist"
+    assert decode_ticket_status("GNWL") == "General Waitlist"
+    assert "Unknown" in decode_ticket_status("XYZ")
+    assert decode_ticket_status(None) == "Unknown Status"
     
     print("✅ All status codes decoded correctly")
 
@@ -246,7 +246,7 @@ async def run_all_tests():
     test_get_waitlist_position()
     
     # Decoder tests
-    test_decode_booking_status()
+    test_decode_ticket_status()
     test_decode_berth()
     
     print(f"\n{'='*50}")
